@@ -3,12 +3,8 @@ package com.quest;
 public class Zombie extends Person {
 	private String deathDate;
 	
-	public Zombie(String deathDate, String name) {
-		super(name);
-	}
 	public void sayName() {
-		System.out.println("My name is "+ name+ "I'm a " + deathDate);
-		System.out.println();
+		System.out.println("It name is ...  "+ " it's a Zombie ");
 	}
 
 	public String getDeathDate() {

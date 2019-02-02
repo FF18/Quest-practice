@@ -1,17 +1,24 @@
 package com.weapons;
 
-public class Knife extends Weapon {
+public class Knife extends Strength {
 	private int sharpnes;
+	final private int maxSharpnes = 10;
 
-	public Knife(int sharpnes, int strength) {
+	public Knife(int sharpnes2, int strength) {
 		super(strength);
+		this.sharpnes = sharpnes2;
 	}
-	public void sayTitle() {
-		System.out.println("My knife title is "+ title);
+
+	public void sayName() {
+		name = "Excalibur";
+		System.out.println("My sword name is "+ name);
 	}
 	public void setSharpnes(int sharpnes) {
-		if(sharpnes>=0 && sharpnes<=10) {
-			System.out.println("final");}
+		if(sharpnes>=0 && sharpnes<=maxSharpnes) {
+			sharpnes = 8;
+			System.out.println("Sharpnes of weapon "+ sharpnes);
+			System.out.println("Max sharpnes of knife is 10 ");
+		}
 	}
 	public int getSharpnes() {
 		return sharpnes;
