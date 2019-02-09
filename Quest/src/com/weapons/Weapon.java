@@ -3,7 +3,8 @@ package com.weapons;
 public abstract class Weapon {
 
 	private String owner;
-	public String name;
+	protected String name;
+	
 	
 	protected abstract void sayName();
 	
@@ -13,5 +14,10 @@ public abstract class Weapon {
 		public void setOwner(String owner) {
 			this.owner = owner;
 		}
-	
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
 	}

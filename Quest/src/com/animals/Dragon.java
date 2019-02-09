@@ -10,6 +10,7 @@ public class Dragon extends Animal{
 	}
 	private int height;
 	
+	@Override
 	public void makeSound() {
 		System.out.println("Sound dragon is roar");
 	}

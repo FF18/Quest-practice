@@ -13,6 +13,7 @@ public class Horse extends Animal{
 //	public Horse(String name, int age, String sound) {
 //		super(name, age);
 //	}
+	
 	@Override
 	public void makeSound() {
 		System.out.println("My horse is neigh");

@@ -1,9 +1,9 @@
 package com.animals;
 
 public abstract class Animal {
-	public String name;
+	private String name;
 	private int age;
-	public String sound;
+	private String sound;
 	
 	public Animal(String name, int age) {
 		this.name = name;
@@ -23,4 +23,11 @@ public abstract class Animal {
 		this.age = age;
 	}
 	abstract public void makeSound();
+
+public String getSound() {
+	return sound;
+}
+public void setSound(String sound) {
+	this.sound = sound;
+}
 }

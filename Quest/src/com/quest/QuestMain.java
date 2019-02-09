@@ -3,6 +3,7 @@ package com.quest;
 import com.weapons.Strength;
 import com.weapons.Gun;
 import com.weapons.Knife;
+import com.animals.Animal;
 import com.animals.Dragon;
 import com.animals.Horse;
 
@@ -28,12 +29,13 @@ public class QuestMain {
 		zombie.sayName();
 		System.out.println();
 		
-		str.setStrength(0);
+		str.setStrength(90);
 		knife.sayName();
-		knife.setSharpnes(0);
+		knife.setSharpnes(9);
 		gun.sayName();
-		gun.setaddBullets(0);
-		gun.setShoots(0);
+		gun.setaddBullets(5);
+		gun.setShoots(4);
+//		com.weapons.Weapon setOwner ();
 		System.out.println();
 		
 		dra.makeSound();

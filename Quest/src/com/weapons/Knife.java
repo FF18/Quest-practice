@@ -15,9 +15,11 @@ public class Knife extends Strength {
 	}
 	public void setSharpnes(int sharpnes) {
 		if(sharpnes>=0 && sharpnes<=maxSharpnes) {
-			sharpnes = 8;
+//			sharpnes = 8;
 			System.out.println("Sharpnes of weapon "+ sharpnes);
 			System.out.println("Max sharpnes of knife is 10 ");
+		}else {
+			System.out.println("Mistake sharpnes of weapon");
 		}
 	}
 	public int getSharpnes() {

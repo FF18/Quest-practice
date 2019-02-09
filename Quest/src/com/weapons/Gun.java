@@ -13,22 +13,23 @@ public class Gun extends Strength {
 	}
 
 	public int getAddBullets() {
-		return shoots;
+		return bullets;
 	}
 //	public void setAddBullets(int bullets) {
 //		this.bullets = bullets;
 //	}
-	public void setaddBullets(int shoots) {
-		shoots = 6;
-		System.out.println("Add "+ shoots+ " bullets for gun");
+	public void setaddBullets(int bullets) {
+		this.bullets = bullets;
+//		bullets = 0;
+		System.out.println("Add "+ bullets+ " bullets for gun");
 	}
 	public int getShoots() {
 		return shoots;
 	}
-	public void setShoots(int bullets) {
-		this.bullets = bullets;
-		bullets = 6;
-		System.out.println("Numbers shoots from Revolver "+ bullets);
+	public void setShoots(int shoots) {
+		this.shoots = shoots;
+//		shoots = 0;
+		System.out.println("Numbers shoots from Revolver "+ shoots);
 	}
 
 }
